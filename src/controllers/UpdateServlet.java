@@ -64,7 +64,7 @@ public class UpdateServlet extends HttpServlet {
                 request.getSession().setAttribute("flush", "更新が完了しました。");
                 em.close();
 
-                request.getSession().removeAttribute("message_id");
+                request.getSession().removeAttribute("task_id");
 
                 response.sendRedirect(request.getContextPath() + "/index");
 
