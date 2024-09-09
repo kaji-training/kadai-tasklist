@@ -66,7 +66,7 @@ public class UpdateServlet extends HttpServlet {
 
                 request.getSession().removeAttribute("message_id");
 
-                response.sendRedirect(request.getContextPath() + "/Index");
+                response.sendRedirect(request.getContextPath() + "/index");
 
             }
 

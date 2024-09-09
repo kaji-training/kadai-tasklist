@@ -39,7 +39,7 @@ public class IndexServlet extends HttpServlet {
         try {
             page = Integer.parseInt(request.getParameter("page"));
         }catch(NumberFormatException e) {}
-        List<Task> tasks = em.createNamedQuery("getAllTask", Task.class)
+        List<Task> tasks = em.createNamedQuery("getAllTasks", Task.class)
                                     .setFirstResult(15 * (page - 1))
                                     .setMaxResults(15)
                                     .getResultList();
